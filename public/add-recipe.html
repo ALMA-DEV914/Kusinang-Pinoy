@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Recipe</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap&family=Karla:400,700|Rubik:400,400i,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="py-3 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <a href="/">
+        <h1 class="text-light  py-3 px-4 logo">Recipe Hunt</h1>
+      </a>
+
+      <h3 class="text-light p-3 round-25-80">
+        Create Your Own Recipe
+      </h3>
+    </div>
+  </header>
+
+  <main class="container-fluid flex-row mx-auto justify-space-between">
+    <div class="col-12 py-3 px-4 my-4">
+      <h2 class="text-light">If you need a little inspiration for cooking and sharing, this is it.</h2>
+    </div>
+    <section class=" p-3 col-12 col-lg-3 mb-3 round-25-80 min-60-vh">
+      <h2 class="text-light px-2">Looking to do something else?</h2>
+      <nav>
+        <a class="btn display-block round-25-80" href="/">See All Recipes.</a>
+      </nav>
+    </section>
+    <section class=" p-3 col-12 col-lg-9 bg-dark mb-3">
+      <h2 class="text-tertiary ">Let's start our masterpiece</h2>
+      <div class="col-12 col-lg-6 p-3 mb-3">
+        <div class="form-container">
+          <form id="recipe-form">
+            <div class="mb-2">
+              <label for="recipe-name" class="form-label">Recipe Name</label>
+              <input type="text" id="recipe-name" name="recipe-name" class="form-input" placeholder="Enter Recipe Name"
+                required />
+            </div>
+            <div class="mb-2">
+              <label for="created-by" class="form-label">Who's Beautiful Idea is This?</label>
+              <input type="text" id="created-by" name="created-by" class="form-input" placeholder="Give us your name"
+                required />
+            </div>
+            <div class="mb-2">
+              <label for="recipe-size" class="form-label">Serving Size (select from dropdown)</label>
+              <select id="recipe-size" class="form-input">
+                <option value="Single person">Personal</option>
+                <option value="Family of 2">Small family of 2</option>
+                <option value="Family of 4">Medium family of 4</option>
+                <option value="Family of 6">Large family of 6</option>
+                <option value="family of 8-10">Large family of 8-10</option>
+              </select>
+            </div>
+            <h3 class="text-tertiary">Choose your ingredients</h3>
+            <div class="flex-row justify-space-between">
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="pepperoni" name="ingredient" value="Pepperoni">
+                  <label for="pepperoni">Chicken</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="beef" name="ingredient" value="Beef">
+                  <label for="beef">Beef</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pork" name="ingredient" value="Pork">
+                  <label for="pork">Pork</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Ketchup" name="ingredient" value="Ketchup">
+                  <label for="ketchup">Ketchup</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="bacon" name="ingredient" value="Bacon">
+                  <label for="bacon">Bacon</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="basil" name="ingredient" value="Basil">
+                  <label for="basil">Basil</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="salt & pepper" name="ingredient" value="Salt & Pepper">
+                  <label for="salt">Salt & Pepper</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pineapple" name="ingredient" value="Pineapple">
+                  <label for="pineapple">Pineapple</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="soy sauce" name="ingredient" value="Soy sauce">
+                  <label for="soy sauce">Soy sauce</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="garlic & onions" name="ingredient" value="Garlic & Onions">
+                  <label for="garlic">Garlic & onions</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tomatoes" name="ingredient" value="Tomatoes">
+                  <label for="tomatoes">Tomatoes</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="fish" name="ingredient" value="Fish">
+                  <label for="fish">Fish</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="mushrooms" name="ingredient" value="Mushrooms">
+                  <label for="mushrooms">Mushrooms</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="vegetables" name="ingredient" value="Vegetables">
+                  <label for="vegetables">Vegetables</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tomato-sauce" name="ingredient" value="Tomato-sauce">
+                  <label for="tomato-sauce">Tomato sauce</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="vinegar" name="ingredient" value="Vinegar">
+                  <label for="vinegar">Vinegar</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="squash" name="ingredient" value="Squash">
+                  <label for="squash">Squash</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="eggplant" name="ingredient" value="Eggplant">
+                  <label for="eggplant">Eggplant</label>
+                </div>
+              </div>
+
+              <!-- custom toppings -->
+              <div class="col-auto">
+                <div id="custom-ingredients-list"></div>
+              </div>
+            </div>
+
+            <div class="w-100 display-block"></div>
+
+            <label for="new-ingredient" class="form-label">Add another ingredients to the list!</label>
+            <input type="text" id="new-ingredient" name="new-ingredient" class="form-input" placeholder="Add Ingredient" />
+
+            <button type="button" id="add-ingredient" class="btn">Add Ingredients</button>
+
+            <div class="my-4 border-light-top display-block w-100"></div>
+
+            <button type="submit" class="btn w-100 m-auto">Submit Recipe</button>
+          </form>
+        </div>
+    </section>
+
+    </div>
+  </main>
+  <script src="./assets/js/add-recipe.js"></script>
+  <script src="./assets/js/idb.js"></script>
+</body>
+
+</html>
